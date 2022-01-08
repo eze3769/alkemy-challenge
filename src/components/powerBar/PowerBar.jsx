@@ -1,7 +1,7 @@
 import "./powerBar.css"
 
 function PowerBar({stats, appearance}) {
-    console.log(appearance)
+
     return (
         <>
         <div className="powerBar d-flex justify-content-evenly ">

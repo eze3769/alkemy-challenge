@@ -12,11 +12,10 @@ function Home() {
 
     const length = heroes.length
     useEffect(() => {
-        let [intelligence, strength, speed, durability, power, combat, heightMt,heightFt, weightKg, weightLb] = Array(10).fill(0)
-        console.log(heroes)
+        let [intelligence, strength, speed, durability, power, combat, heightMt, weightKg] = Array(8).fill(0)
+
         heroes.forEach((el)=>{
             const powerstat = el.powerstats
-            if (!isNaN(parseInt(powerstat.intelligence))) console.log(parseInt(powerstat.intelligence))
             if (!isNaN(parseInt(powerstat.intelligence))) intelligence+= parseInt(powerstat.intelligence)
             if (!isNaN(parseInt(powerstat.strength))) strength+= parseInt(powerstat.strength)
             if (!isNaN(parseInt(powerstat.speed))) speed+= parseInt(powerstat.speed)

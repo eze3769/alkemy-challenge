@@ -1,7 +1,6 @@
 import "./details.css"
 
 function Details({char, addHeroe}) {
-    console.log(char)
     return (
         <div className="container">
             <h1 className="py-3">{char.name}</h1>

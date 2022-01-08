@@ -1,6 +1,5 @@
 import React from 'react'
 import './index.css'
-import { Formik, Field } from 'formik'
 
 
 function Search({inputHandler}) {

@@ -15,16 +15,13 @@ function Pagination({results}) {
     
     useEffect(() => {
         const endOffset = itemOffset + itemsPerPage;
-        console.log(`Loading items from ${itemOffset} to ${endOffset}`);
         setCurrentItems(results.slice(itemOffset, endOffset));
         setPageCount(Math.ceil(results.length / itemsPerPage));
     }, [itemOffset, itemsPerPage, results]);
     
     const handlePageClick = (event) => {
         const newOffset = (event.selected * itemsPerPage) % results.length;
-        console.log(
-        `User requested page number ${event.selected}, which is offset ${newOffset}`
-    );
+       
     setItemOffset(newOffset);
   };
     

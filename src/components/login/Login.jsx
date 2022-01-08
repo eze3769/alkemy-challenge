@@ -1,8 +1,9 @@
 import {useContext, useState} from 'react'
-import { Formik, Form, Field, ErrorMessage, useFormik } from 'formik';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { appContext } from '../../context/HerosContext';
 import {getToken} from '../../api/apiAjax'
 import { useNavigate, useLocation, Navigate } from 'react-router-dom';
+import "./login.css"
 
 function Login() {
 let {setAuth,auth} = useContext(appContext)
@@ -20,7 +21,7 @@ if(auth){
 }
 
     return (
-        <div className="d-flex justify-content-center container">
+        <div className="d-flex justify-content-center container login">
             <div>
               <h1>You must log in first!</h1>
               <Formik 

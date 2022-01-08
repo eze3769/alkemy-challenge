@@ -4,7 +4,7 @@ import Loader from '../loader/Loader'
 
 
 function SearchResults({results, isLoading}) {
-    console.log(results)
+
     return (
         <div>
             {isLoading ?

@@ -26,4 +26,4 @@ const getToken = async ({email, password}) =>{
 }
 
 
-module.exports = {getSearch, getChar, getToken}
+export {getSearch, getChar, getToken}
