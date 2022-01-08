@@ -1,0 +1,22 @@
+.powerBar{
+    background-color: gainsboro;
+    padding-top:15px;
+    border-radius: 8px;
+    flex-direction: row;
+}
+.appareanceBar{
+    background-color: gainsboro;
+    padding-top:6px;
+    border-radius: 8px;
+    margin-top: 6px;
+
+}
+.appareanceBar p{
+    padding: 0 20px;
+}
+@media (max-width: 768px) {
+    .powerBar{
+        flex-direction: column;
+        align-items: center;
+    }
+}

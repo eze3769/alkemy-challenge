@@ -1,0 +1,18 @@
+.char-image{
+    width: 30vw;
+}
+.details-container{
+    flex-direction: row;
+    padding-bottom: 40px;
+}
+.details-text-container{
+    padding:40px;
+}
+@media (max-width: 768px) {
+    .details-container{
+        flex-direction: column;
+    }
+    .details-text-container{
+        padding: 10px;
+    }
+}
