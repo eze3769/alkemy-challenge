@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+Este proyecto fué realizado en ReactJS, utilizando las librerías Bootstrap, Formik, SweetAlert, React-paginate y la API superheroapi.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+El proyecto se llevó a cabo para el desafío de React de Alkemy, el cual consta de una app que para mostrar sus secciones necesite loguearse realizando un POST a la API de Alkemy, la cual si me logueo correctamente me responderá con un token, el cual se guarda en el localStorage.
 
-## Available Scripts
+La app cuenta principalmente de 2 secciones, el Home donde se veran los héroes de mi equipo junto con sus powerstats, los powerstats promedio, la característica principal del equipo (que estará dada por el powerstat predominante) y botones para quitar el personaje o ver sus detalles. La otra sección es la sección Search, la cual básicamente es un buscador de heroes donde luego de buscarlos puedo ver sus detalles y agregarlos al equipo.
 
-In the project directory, you can run:
+Se cuenta con un límite de 6 personajes por equipo, 3 buenos y 3 malos.
 
-### `npm start`
+La app en sí tiene un entorno visual básico ya que fué desarrollada en 2 días.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Datos para el login:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Usuario: challenge@alkemy.org
 
-### `npm test`
+Contraseña: react
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-------------------------------------------------------------------------------------------
 
-### `npm run build`
+This project was coded in ReactJS, using the Bootstrap, Formik, SweetAlert, React-paginate libraries and the superheroapi API.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This is a proyect for Alkemy's React challenge. This app has two sections, and to operate the user needs to log in by doing a POST to the Alkemy API, which, if its log in correctly it will respond with a token, which it is saved in the localStorage.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The app mainly has 2 sections: the Home where the heroes of my team will be seen along with their powerstats, the average powerstats, the main characteristic of the team (which will be given by the predominant powerstat) and buttons to remove the character or view their details. The other section is the Search section, that's basically a hero search engine where after searching for them I can see their details and add them to the team.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+There is a limit of 6 characters per team, 3 good and 3 bad ones.
 
-### `npm run eject`
+The app itself has a basic visual environment since it was developed in 2 days.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Login:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+User: challenge@alkemy.org
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Password: react
