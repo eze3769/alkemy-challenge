@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/alkemy-challenge/static/css/main.77fcbd59.css",
+    "main.js": "/alkemy-challenge/static/js/main.753eb022.js",
+    "static/js/787.d4c0174f.chunk.js": "/alkemy-challenge/static/js/787.d4c0174f.chunk.js",
+    "static/media/superHeroesCatHeader_1920x716.jpg": "/alkemy-challenge/static/media/superHeroesCatHeader_1920x716.4840796ccb8338198787.jpg",
+    "index.html": "/alkemy-challenge/index.html",
+    "main.77fcbd59.css.map": "/alkemy-challenge/static/css/main.77fcbd59.css.map",
+    "main.753eb022.js.map": "/alkemy-challenge/static/js/main.753eb022.js.map",
+    "787.d4c0174f.chunk.js.map": "/alkemy-challenge/static/js/787.d4c0174f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77fcbd59.css",
+    "static/js/main.753eb022.js"
+  ]
+}
