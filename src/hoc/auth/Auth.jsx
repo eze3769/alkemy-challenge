@@ -7,11 +7,16 @@ function Auth({ children }) {
     let {navigateMemo} = useContext(appContext)
     let location = useLocation()
     navigateMemo = location.pathname
-    
-   
+
+    const existsPath = children.some(el=> el.props.path === location.pathname)
+    if (!existsPath){
+        return <Navigate to="/404" />
+    } 
+
     if(!auth){
         return <Navigate to="/login" state={{memory:navigateMemo}}/>
     }
+    
     return (
         <Routes>
             {children}

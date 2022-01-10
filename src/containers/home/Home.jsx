@@ -12,6 +12,7 @@ function Home() {
 
     const length = heroes.length
     useEffect(() => {
+        if(heroes){
         let [intelligence, strength, speed, durability, power, combat, heightMt, weightKg] = Array(8).fill(0)
 
         heroes.forEach((el)=>{
@@ -52,7 +53,8 @@ function Home() {
             weightKg: Math.floor((weightKg / length))
          }
          setAppareance(appareanceData)
-    }, [heroes])
+        }
+    }, [heroes, length])
 
     return (
         <>
