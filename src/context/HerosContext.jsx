@@ -40,8 +40,9 @@ function HerosContext( {children}) {
                     const alignment = res.data.biography.alignment
                     const findAlignments = heroes.filter(el=>el.biography.alignment === alignment)
                     if (findAlignments.length < 3){
-                        setHeroes([...heroes, res.data])
-                        localStorage.setItem("heroes",JSON.stringify(heroes))
+                        let aux = ([...heroes, res.data])
+                        setHeroes(aux)
+                        localStorage.setItem("heroes",JSON.stringify(aux))
                         swal("Good job!", "Your hero was succefully added!", "success");
                     }else{
                         swal("Oh no!", `You already have 3 ${alignment} heroes, choose from the other alignment! `, "error");
@@ -58,7 +59,7 @@ function HerosContext( {children}) {
     const removeHero = (id) =>{
         const aux = heroes.filter(el => el.id !== id)
         setHeroes(aux)
-        localStorage.setItem("heroes",JSON.stringify(heroes))
+        localStorage.setItem("heroes",JSON.stringify(aux))
     }
 
     return (

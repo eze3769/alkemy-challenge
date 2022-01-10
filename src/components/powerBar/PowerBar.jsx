@@ -45,8 +45,8 @@ function PowerBar({stats, appearance}) {
             ?
             <div className="d-flex justify-content-end align-content-center">
                 <div className="appareanceBar d-flex flex-row ">
-                    <p>Average height: <b>{appearance.heightMt} cm</b></p>
-                    <p>Average weight: <b>{appearance.weightKg} kgs</b></p>
+                    <p>Average height: <b>{appearance.heightMt || 0} cm</b></p>
+                    <p>Average weight: <b>{appearance.weightKg || 0} kgs</b></p>
                 </div>
             </div>
             

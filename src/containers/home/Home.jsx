@@ -58,12 +58,15 @@ function Home() {
 
     return (
         <>
-          <TeamView heroes={heroes} 
-                    removeHero={removeHero} 
-                    stats={stats} 
-                    maxPower={maxPower}
-                    appearance = {appearance}
-                    />
+            
+                <TeamView heroes={heroes} 
+                removeHero={removeHero} 
+                stats={stats} 
+                maxPower={maxPower}
+                appearance = {appearance}
+                />
+          
+          
         </>
     )
 }
