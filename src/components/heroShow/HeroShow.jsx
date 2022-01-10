@@ -6,7 +6,7 @@ function HeroShow({hero, removeHero}) {
         <div className="hero-show">
             <div>
                 <div>
-                    <h3 className={hero.biography.alignment === "good" ? "text-center text-success" : "text-center text-danger"} >{hero.name}</h3>
+                    <h3 className={hero.biography.alignment === "good" ? "card-title text-success" : hero.biography.alignment==="bad" ? "card-title text-danger" : "card-title"} >{hero.name}</h3>
                 </div>
                 <div className="imgContainer">
                     <img className="hero-show_img"src={hero.image.url} alt={hero.name} />
@@ -42,6 +42,16 @@ function HeroShow({hero, removeHero}) {
                         <h5>Combat:</h5>
                         <div className="progress">
                             <div className="progress-bar" role="progressbar" style={{width: `${hero.powerstats.combat}%`}} aria-valuenow={hero.powerstats.combat} aria-valuemin="0" aria-valuemax="100">{hero.powerstats.combat}</div>
+                        </div>
+                        <div>
+                            <h5 
+                            className={hero.biography.alignment === "good" 
+                            ? "p-2 text-end text-success" : 
+                            hero.biography.alignment==="bad" 
+                            ? "p-2 text-end text-danger" : 
+                            "p-2 text-end"} >
+                                {hero.biography.alignment}
+                            </h5>
                         </div>
                     </div>
                 </div>
