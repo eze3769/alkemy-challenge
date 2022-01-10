@@ -18,10 +18,10 @@ function Router() {
                         <Route path="/" element={<Home/>}/>
                         <Route path="/search" element={<SearchContainer/>}/>
                         <Route path="/characters/:id" element={<DetailsContainer/>}/>
+                        <Route path="/*" element={<NotFound/>}/>
                     </Auth>
                 } />
                 <Route path="/login" element={<Login/>}/>
-                <Route path="/404" element={<NotFound/>}/>
             </Routes>
             <Footer/>
         </BrowserRouter>
