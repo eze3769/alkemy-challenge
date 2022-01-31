@@ -16,7 +16,7 @@ function HerosContext( {children}) {
     const localToken = localStorage.getItem("token")
     
     useEffect(()=>{
-        if(localStorage){
+        if(localStorage.getItem("heroes")){
             setHeroes(JSON.parse(localStorage.getItem("heroes")))
         }
     },[])
